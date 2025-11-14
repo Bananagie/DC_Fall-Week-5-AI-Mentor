@@ -120,7 +120,7 @@ export default function App() {
                 }`}
               >
                 <div className="whitespace-pre-wrap break-words">
-                  {message.content}
+                  <div dangerouslySetInnerHTML={{ __html: message.content }} />
                 </div>
               </div>
               {message.role === "user" && (
